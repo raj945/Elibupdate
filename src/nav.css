@@ -1,0 +1,142 @@
+.nav {
+  height: 50px;
+  display: grid;
+}
+
+.title {
+  font-weight: 700;
+  color: bisque;
+  display: inline-block;
+}
+
+.main-nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5rem 5rem 20rem 1.5fr 1fr 5rem;
+  background-color: #ebf5eb;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0px 0px 5px 1px rgba(100, 100, 100, 0.3);
+}
+
+.logo {
+  grid-column: 2/3;
+  justify-content: center;
+  align-content: center;
+  font-size: 18px;
+  padding: 2px;
+}
+
+.menu {
+  display: grid;
+  grid-column: 5/6;
+  padding: 3px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 10px;
+  font-size: 24px;
+}
+
+@media (max-width: 900px) {
+  .menu ul {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .land img {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .land {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #76c240;
+  transition: 0.4s;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: rgba(0, 0, 0, 1);
+  color: white;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  backdrop-filter: blur(50px);
+  cursor: pointer;
+}
+
+.search input {
+  background-color: #cce6d6;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 80px;
+  border: 2px solid;
+  color: black;
+  font-size: 15px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 00, 00, 0.2);
+  font-weight: 400;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.search {
+  grid-column: 4/5;
+}
+
+/* .search {
+  background-color: cadetblue;
+  color: black;
+  border-radius: 20px;
+  margin: 0px;
+  grid-column: 4/5;
+  width: 100%;
+  padding: 50px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 60px;
+  height: 50%;
+} */
+/* .land {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.maintext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainimage {
+  display: flex;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  margin: 20px;
+} */
